@@ -1,43 +1,59 @@
-body {
+body
+{
   font-size: 16px;
-  color: #fff;
-  background-color: #ffff;
+  display: block;
+  padding:0;
+  margin-right:10px;
   font-family: 'Oxygen', sans-serif;
 }
 
-/** HEADER **/
+*
+{
+  box-sizing: border-box;
+}
+li > a
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+/**************************/
+
 #header-nav {
   background-color: #f6b319;
   border-radius: 0;
   border: 0;
+
 }
 
 
 .navbar-brand {
   padding-top: 25px;
 }
-.navbar-brand h1 { /* Restaurant name */
+.navbar-brand h1 {
   font-family: 'Comic Neue', cursive;
   color: #ffff;
-  font-size: 2.5em;
+  font-size: 1.9em;
   text-transform: unset;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: .75;
-  clear: both;
+  line-height: .6;
+
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* Kosher cert */
+.navbar-brand p { 
   color: #000;
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
 }
-.navbar-brand p span { /* Star-K */
+.navbar-brand p span { 
   vertical-align: middle;
 }
 
@@ -67,69 +83,66 @@ body {
   clear: both;
   margin-top: -30px;
 }
-/* END HEADER */
+/*Header End*/
 
 #menu-categories-title {
-  margin: 60px;
-  font-size: 3em;
+  margin: 30px;
+  font-size: 1.9em;
   text-align: center;
   color: green;
   font-weight: bold;
 }
 
-#chicken {
+
+/*************************/
+}
+.row div
+{
+  background-color: grey;
+  position: relative;
+  float: left;
+  margin-bottom: 30px;
+  padding: 40px 20px 20px 20px;
+  border:1px solid black;
+}
+
+#chicken, #beef, #sushi {
   font-family: 'Comic Neue', cursive;
   text-align: center;
-  margin: 20px;
-  margin-top: 10px;
-  margin-bottom: 27px;
+  margin: 10px;
+
+  margin-bottom: 45px;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.7em;
   color: #9A06B8;
-  
-}
-
-.col-xs-12 {
   background: #FFF8C3;
-
-
-}
-.row {
-  margin-bottom: 40px;
-  margin-right: 40px;
+  padding: 20px;
 
 }
 
 .texte {
   font-family: cursive;
-  font-size: 1em;
+  font-size: .7em;
   color: black;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 15px;
   padding: 0 20px 20px 20px;
 
 }
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  #header-nav {
-  height: 80px;
-  }
+.texte-center {
+  text-align: center;
 }
 
-/********** Medium devices only **********/
-@media (min-width: 769px) and (max-width: 1199px) {
-  /* Header */
-  #header-nav {
-  height: 80px;
-  }
+h4 {
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+  color: blue;
 }
 
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-  .col-xs-12 {
-  margin-right: 60px;
-  margin-left: 20px;
-  padding-right: 20px;
-
-  }
+.col-xs-12 a
+{
+  color: white;
 }
